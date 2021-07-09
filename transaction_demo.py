@@ -5,7 +5,6 @@ from pymongo.read_concern import ReadConcern
 from pymongo.errors import ConnectionFailure, OperationFailure
 
 uri = 'mongodb+srv://analytics:analytics-password@analytics.zp8ia.mongodb.net'
-print('uri', uri)
 client = MongoClient(uri)
 my_wc_majority = WriteConcern('majority', wtimeout=1000)
 
